@@ -12,10 +12,8 @@ Process* forkSim(Process* parent)
 
   if (parent != NULL)
   {
-    pid = ++parent->id;
+    pid = parent->id + 1;
   }
-
-  printf("ID: %d\n", pid);
 
   Process* process = malloc(sizeof(Process));
   process->id = pid;
@@ -27,4 +25,17 @@ Process* forkSim(Process* parent)
   process->priority++;
 
   return process;
+}
+
+void printProcesses(int start, int numProcesses, Process* processes[])
+{
+  int iter = start;
+
+  for (iter; iter < numProcesses; iter++)
+  {
+    printf("------------------------\n");
+    printf("Process with id: %d\n", processes[iter]->id);
+    printf("Process has time: %d\n", processes[iter]->time);
+    printf("Process has priority: %d\n", processes[iter]->priority);
+  }
 }
