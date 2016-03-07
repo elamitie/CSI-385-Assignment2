@@ -3,6 +3,8 @@
 
 #include "process.h"
 
+#define NUMBER_PROCESSES 10
+
 /* Used internally no real reason to typedef */
 struct node
 {
@@ -39,5 +41,11 @@ void printIDs(ProcessQueue* queue);
 
 /* Print everything */
 void print(ProcessQueue* queue);
+
+//////////////////////////////////////////////////////
+// Scheduling Algorithms
+//////////////////////////////////////////////////////
+
+void fifo(ProcessQueue* queue);
 
 #endif

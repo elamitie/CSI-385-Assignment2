@@ -105,3 +105,21 @@ void print(ProcessQueue* queue)
     n = n->next;
   }
 }
+
+void fifo(ProcessQueue* queue)
+{
+  for (int i = 0; i < NUMBER_PROCESSES; i++)
+  {
+    Process* p;
+    if (i - 1 < 0)
+    {
+      p = forkSim(NULL);
+      enqueue(queue, p);
+    }
+    else
+    {
+      p = forkSim(rear(queue));
+      enqueue(queue, p);
+    }
+  }
+}
