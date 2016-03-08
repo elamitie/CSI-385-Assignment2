@@ -18,3 +18,9 @@ the various different tests / algorithms:
 
   `make priorityRoundRobin`
 
+The Makefile will generate a build folder in the project root
+where it will put the executable.
+If the program is executed on the commandline without the
+proper commandline arguments, it will default to running
+as fifo. The proper commandline arguments are specificed
+by each of the Makefile targets.
