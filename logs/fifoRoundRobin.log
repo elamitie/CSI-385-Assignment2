@@ -1,0 +1,151 @@
+Script started on Tue 08 Mar 2016 01:24:42 PM EST
+]0;elamitie@ubuntu: ~/Repos/OS/CSI-385-Assignment2elamitie@ubuntu:~/Repos/OS/CSI-385-Assignment2$ make fifoRoundRobin
+make[1]: Entering directory '/home/elamitie/Repos/OS/CSI-385-Assignment2'
+if ! [ -d "./build" ]; then mkdir "./build"; fi
+gcc src/pa2.c src/process.c src/array.c -std=c99 -o ./build/pa2
+make[1]: Leaving directory '/home/elamitie/Repos/OS/CSI-385-Assignment2'
+././build/pa2 fifoRoundRobin
+-------------------
+RUN NUMBER: 1
+
+	-------------------
+	Process w/ ID: 0
+	Total time: 14
+	Priority: 1
+	Time remaining: 9
+	-------------------
+	Process w/ ID: 1
+	Total time: 9
+	Priority: 1
+	Time remaining: 4
+	-------------------
+	Process w/ ID: 2
+	Total time: 15
+	Priority: 1
+	Time remaining: 10
+	-------------------
+	Process w/ ID: 3
+	Total time: 12
+	Priority: 2
+	Time remaining: 7
+	-------------------
+	Process w/ ID: 4
+	Total time: 12
+	Priority: 2
+	Time remaining: 7
+	-------------------
+	Process w/ ID: 5
+	Total time: 3
+	Priority: 2
+	Time remaining: 0
+	Process Complete!
+	-------------------
+	Process w/ ID: 6
+	Total time: 13
+	Priority: 2
+	Time remaining: 8
+	-------------------
+	Process w/ ID: 7
+	Total time: 2
+	Priority: 3
+	Time remaining: 0
+	Process Complete!
+	-------------------
+	Process w/ ID: 8
+	Total time: 8
+	Priority: 3
+	Time remaining: 3
+	-------------------
+	Process w/ ID: 9
+	Total time: 14
+	Priority: 3
+	Time remaining: 9
+-------------------
+RUN NUMBER: 2
+
+	-------------------
+	Process w/ ID: 0
+	Total time: 9
+	Priority: 1
+	Time remaining: 4
+	-------------------
+	Process w/ ID: 1
+	Total time: 4
+	Priority: 1
+	Time remaining: 0
+	Process Complete!
+	-------------------
+	Process w/ ID: 2
+	Total time: 10
+	Priority: 1
+	Time remaining: 5
+	-------------------
+	Process w/ ID: 3
+	Total time: 7
+	Priority: 2
+	Time remaining: 2
+	-------------------
+	Process w/ ID: 4
+	Total time: 7
+	Priority: 2
+	Time remaining: 2
+	-------------------
+	Process w/ ID: 6
+	Total time: 8
+	Priority: 2
+	Time remaining: 3
+	-------------------
+	Process w/ ID: 8
+	Total time: 3
+	Priority: 3
+	Time remaining: 0
+	Process Complete!
+	-------------------
+	Process w/ ID: 9
+	Total time: 9
+	Priority: 3
+	Time remaining: 4
+-------------------
+RUN NUMBER: 3
+
+	-------------------
+	Process w/ ID: 0
+	Total time: 4
+	Priority: 1
+	Time remaining: 0
+	Process Complete!
+	-------------------
+	Process w/ ID: 2
+	Total time: 5
+	Priority: 1
+	Time remaining: 0
+	Process Complete!
+	-------------------
+	Process w/ ID: 3
+	Total time: 2
+	Priority: 2
+	Time remaining: 0
+	Process Complete!
+	-------------------
+	Process w/ ID: 4
+	Total time: 2
+	Priority: 2
+	Time remaining: 0
+	Process Complete!
+	-------------------
+	Process w/ ID: 6
+	Total time: 3
+	Priority: 2
+	Time remaining: 0
+	Process Complete!
+	-------------------
+	Process w/ ID: 9
+	Total time: 4
+	Priority: 3
+	Time remaining: 0
+	Process Complete!
+-----------------
+Time taken to execute queue: 120.000000
+]0;elamitie@ubuntu: ~/Repos/OS/CSI-385-Assignment2elamitie@ubuntu:~/Repos/OS/CSI-385-Assignment2$ exit
+
+Script done on Tue 08 Mar 2016 01:24:49 PM EST

@@ -1,0 +1,53 @@
+Script started on Tue 08 Mar 2016 01:24:21 PM EST
+]0;elamitie@ubuntu: ~/Repos/OS/CSI-385-Assignment2elamitie@ubuntu:~/Repos/OS/CSI-385-Assignment2$ make priority
+make[1]: Entering directory '/home/elamitie/Repos/OS/CSI-385-Assignment2'
+if ! [ -d "./build" ]; then mkdir "./build"; fi
+gcc src/pa2.c src/process.c src/array.c -std=c99 -o ./build/pa2
+make[1]: Leaving directory '/home/elamitie/Repos/OS/CSI-385-Assignment2'
+././build/pa2 priority
+--------------------
+Process w/ ID: 2
+Execution Time: 5
+Priority Number: 1
+--------------------
+Process w/ ID: 3
+Execution Time: 2
+Priority Number: 1
+--------------------
+Process w/ ID: 6
+Execution Time: 2
+Priority Number: 2
+--------------------
+Process w/ ID: 7
+Execution Time: 4
+Priority Number: 2
+--------------------
+Process w/ ID: 9
+Execution Time: 3
+Priority Number: 2
+--------------------
+Process w/ ID: 0
+Execution Time: 15
+Priority Number: 3
+--------------------
+Process w/ ID: 1
+Execution Time: 12
+Priority Number: 3
+--------------------
+Process w/ ID: 4
+Execution Time: 4
+Priority Number: 3
+--------------------
+Process w/ ID: 5
+Execution Time: 5
+Priority Number: 3
+--------------------
+Process w/ ID: 8
+Execution Time: 9
+Priority Number: 3
+-----------------
+Time taken to execute queue: 61.000000
+Average time to execute a processes: 6.100000
+]0;elamitie@ubuntu: ~/Repos/OS/CSI-385-Assignment2elamitie@ubuntu:~/Repos/OS/CSI-385-Assignment2$ exit
+
+Script done on Tue 08 Mar 2016 01:24:28 PM EST
