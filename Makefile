@@ -14,3 +14,23 @@ run:
 
 clean:
 	rm -rf $(BUILD_FOLDER)$(OBJ_NAME)
+
+fifo:
+	@make all
+	./$(BUILD_FOLDER)$(OBJ_NAME) fifo
+
+shortestTime:
+	@make all
+	./$(BUILD_FOLDER)$(OBJ_NAME) shortestTime
+
+priority:
+	@make all
+	./$(BUILD_FOLDER)$(OBJ_NAME) priority
+
+fifoRoundRobin:
+	@make all
+	./$(BUILD_FOLDER)$(OBJ_NAME) fifoRoundRobin
+
+priorityRoundRobin:
+	@make all
+	./$(BUILD_FOLDER)$(OBJ_NAME) priorityRoundRobin
