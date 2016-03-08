@@ -9,7 +9,12 @@ The Makefile has a number of targets for building and running
 the various different tests / algorithms:
 
   `make fifo`
+
   `make shortestTime`
+
   `make priority`
+
   `make fifoRoundRobin`
+
   `make priorityRoundRobin`
+
